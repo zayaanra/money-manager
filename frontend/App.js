@@ -41,7 +41,7 @@ const App = () => {
         <TouchableOpacity 
         styles={styles.button}
         onPress={() => {
-            fetch("http://localhost:5000/login" + username + "-" + password, {
+            fetch("http://localhost:5000/login-" + username + "-" + password, {
               mode: "no-cors",
               method: "POST",
               headers: {
